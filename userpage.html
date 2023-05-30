@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.js"
+        integrity="sha512-5J08Lq3B2EfuPrNSYckUPHKYHaUhCQ4MdeObdcR0YZnr8eapZ7XMA2ejUyQYpWN+fwO48wuxsL5KDZYIVVVxvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <style>
+        body {
+             background: url("www.tedxkiet.com (2) copy.png") no-repeat center center/cover; 
+             content: " ";
+
+            /* background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 52rem;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        /* .info{
+          width: 400px;
+          height: 400px;
+          border: black 2px solid  ;
+          display:grid;
+      } */
+        .col {
+            margin-top: 50px;
+            text-align: center;
+            border: black 2px solid;
+
+        }
+
+        .col:hover {
+            background-color: black;
+            color: #00db0b;
+        }
+        #imgin{
+            margin: 50px 100px;
+        }
+        #oneside{
+            float: left;
+            width: 700px;
+        }
+        #otherside{
+
+            float: right;
+            width: 700px;
+            margin-top: 200px;
+        }
+        #headuser{
+            margin-left: 225px;
+        }
+        #div1{
+            margin:80px;
+        }
+        .redword{
+            color: red;
+        }
+        #findun{
+            width: 500px;
+            height: 400px;
+            border: black 0.1px solid;
+            border-radius: 10px;
+        }
+        #floatingInput{
+            width: 80%;
+            margin-bottom: 5px;
+        }
+        #floatingPassword{
+            width: 80%;
+        }
+    </style>
+
+
+</head>
+
+
+
+<body ng-app="app">
+    <div ui-view>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">TEDxKIET &reg; </h5>
+                <span class="text-muted"> TEDxKIET is an independently organized TED event, focused on bringing together speakers and participants. </span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">TEDxKIET &reg; </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" class="nav" ui-sref="second">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" class="nav" ui-sref="first"> Login </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" class="nav" ui-sref="third"> List of Members </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" class="nav" ui-sref="sixth"> Register </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#accordionExample">About </a></li>
+                                        <li><a class="dropdown-item" href="#">Security</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
+<div ng-controller="userCtrl"> 
+        
+
+        <div id="div1">
+            
+            <h1 class="redword">
+                Dear Attendee, </h1>
+<br>
+<p><b> Greetings of the day!</b></p>
+
+<p> We hope that you are safe and doing great!</p>
+
+<p> Thank you for registering at <b class="redword"> TEDxKIET!</b></p>
+
+<p> We are elated to tell you that your seat has been confirmed for the <b class="redword"> TEDxKIET 2023</b>. We are looking forward to your auspicious presence at the event.</p>
+
+<p>For more event related information and updates, kindly connect to us on our social media.</p>
+
+<p>Basic Details of the event:</p>
+
+<p><b>  Date: 5th May, 2023 &nbsp; &nbsp; &nbsp; 
+Day: Friday  &nbsp; &nbsp; &nbsp;
+Time: 9:15 A.M. – 4:50 P.M. &nbsp; &nbsp; &nbsp;
+Venue: Auditorium, KIET Group of Institutions &nbsp; &nbsp; &nbsp;
+Theme: Living the Wonka World </b></p>
+<br>
+<h3> Some Basic Attendee Guidelines are provided that should be taken care of on the day of event:</h3>
+<br>
+<p> <b> Reporting and Registration:</b> It will start from 8:00 a.m. till 9:15 a.m. at the College Registration Desk in front of the Auditorium.</p>
+
+<p> <b> Attendee Kit:</b> After reporting, an attendee kit is provided to all the registered members.</p>
+
+<p><b> For consumption of Refreshments:</b> Refreshments will be provided in the lunch break must be consumed outside the Auditorium only.(12:55 p.m. to 1:55 p.m.).</p>
+
+<p><b> Attendee ID-Card:</b> Every attendee is expected to wear the attendee ID card provided in the attendee kit.</p>
+
+<p><b> Maintain Decorum:</b> Kindly, switch mobile phones on silent/ vibration mode before the starting of the event till the end.</p>
+
+<p><b> Disciplinary Actions:</b> Any sort of nuisance or indiscipline will not be entertained and strict actions will be taken against the respective member.</p>
+
+<p><b> For Q&A Session:</b> Attendees can write their questions on the notepad which will be handed over to the Discipline In-charge, who will then hand them over to the event host for further proceedings.</p>
+
+<p><b> Feedback:</b> A <b class="redword"> TEDx</b> event feedback link will be provided to the attendees after the event, which is requested to be filled by every registered member.</p>
+You can also have a glimpse of our previous event from the Flickr link below:
+
+<a href="https://www.flickr.com/photos/tedxkiet/albums">https://www.flickr.com/photos/tedxkiet/albums</a>  
+
+<p>In case you have any query, you can mail us at tedx@kiet.edu, you can visit our website HELP to submit your query or you can contact:</p>
+
+<p> Ritik Vyas (+91 9997646831)</p>
+<p> Yash Chawla (+91 8299580207)</p>
+<p> To avail the offer of 35% off on Haircare Products from TheYou, kindly register on the Google form provided below:</p>
+
+
+
+<p> https://forms.gle/zeNBTjBbi5agJYCE7</p>
+<p>Warm Regards,</p>
+
+<b>Team TEDxKIET</b>
+            
+        </div>
+        <center> <div id="findun">
+            <br>
+            <h1> My Entry Code</h1>
+            <br>
+            <form>
+                <input type="text" class="form-control" id="floatingInput" ng-model="email" placeholder="Enter your University Roll No."
+                    required>
+        
+        
+        
+                <input type="password" class="form-control" id="floatingPassword" ng-model="password" placeholder="Password"
+                    required>
+                <br>
+                <center><button type="submit" class="btn btn-primary" id="btn"  ng-click="func()"> Find My Entry Code </button></center>
+        
+            </form>
+            <br
+            <div ng-show="showValues">
+                <h1>Name - {{ uniqueName }}</h1>
+                <p>Entry Code: {{ randomNo }}</p>
+                <p>Checked-in Status: {{ Status }}</p>
+              </div>
+              
+        </div></center>
+</div>
+
+
+<br>
+<br>
+<br>
+    </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
